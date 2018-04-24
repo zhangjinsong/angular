@@ -1,0 +1,47 @@
+Angular, Typescript, node.js
+
+  * Angular 中文官方文档：https://angular.cn/
+
+   * Typescript, 建议查阅TS的官网文档：https://www.typescriptlang.org/samples/index.html
+
+# 显示类：HTML5 & CSS3
+## 显示类：HTML5 & CSS3
+
+  * HTML5, 建议参考mozilla的官网文档了解主要特性：https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/HTML5
+
+
+# 混合开发框架：Ionic3, Cordova
+## 混合开发框架：Ionic3, Cordova
+
+  * Ionic3文档：http://ionicframework.com/
+  * Cordova: http://cordova.apache.org/
+  * Cordova插件：http://cordova.apache.org/plugins/
+
+# 打包和测试工具：Jasmine, Karma, Webpack
+## 打包和测试工具：Jasmine, Karma, Webpack
+
+  * Jasmine: https://jasmine.github.io/
+   Jasmine中文:https://yq.aliyun.com/articles/53426
+  * Karma: http://karma-runner.github.io/1.0/index.html
+  * Webpack: https://webpack.github.io/
+
+# 组件化设计/开发套件（CDS）：https://uidesigner.accenture.com
+## 推荐的开发工具
+
+  * VSC, 下载地址：https://code.visualstudio.com/
+
+## 一些论坛
+  1. w3cplus: https://www.w3cplus.com/
+  2. ionic官网用到的UI组件及api：https://ionicframework.com/docs/
+  3. es6的语法:
+    http://es6.ruanyifeng.com/    //比较全
+    https://segmentfault.com/a/1190000004365693   //30分钟学es6 80%的语法，够用了
+
+  4. TypeScript中文文档: https://www.tslang.cn/docs/handbook/basic-types.html
+  5. nicefish, 一个大神写的，ng2的类似博客的系统: http://git.oschina.net/mumu-osc/NiceFish
+  6. angular社区: http://www.angularjs.cn/
+  7. Rxjs官方文档中文翻译: https://www.gitbook.com/book/buctwbzs/rxjs/details
+  8. Angular权威教程 基础的学习书箱 由浅入深: http://www.ituring.com.cn/book/1874
+
+## 组件化设计/开发套件（CDS）：
+    https://uidesigner.accenture.com

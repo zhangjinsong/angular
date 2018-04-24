@@ -1,0 +1,24 @@
+angular学习总结：
+1、--flat把文件放进了src/app中，而不是单独的目录中
+2、--module=app告诉CLI把它注册到AppModule的import数组中
+3、这个方法之所以叫forRoot()，是因为你要在应用的顶级配置这个路由器。forRoot()方法会提供路由所需的服务提供商和指令，还会基于浏览器的当前URL执行首次导航。
+4、route.snapshot是一个路由信息的静态快照，抓取自组件刚刚创建完毕以后
+5、paramMap是一个从URL中提取的路由参数值的字典。“id”对于的值就是要获取的参数的值id
+6、注意，反引号 ( ` ) 用于定义 JavaScript 的 模板字符串字面量，以便嵌入 id。
+7、$是一个命名惯例，用来表明heroes$是一个Observable,而不是数组。
+8、*ngFor不能直接使用Observable,不过，它后面还有一个管道字符（|），后面紧跟一个async，它表示Angular的AsyncPipe.
+9、AsyncPipe会自动订阅到Observable,这样你就不用再在组件中订阅了
+10、Subject既是观察对象的数据源，本身也是Observable.你可以像订阅任何Obervale一样订阅Subject11、你还可以通过调用他的next(value)方法往Observable中推送一些值，就像search方法中一样
+12、search()是通过对文本框的keystroke事件的事件绑定来调用的。
+<input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
+13、每当用户在文本框中输入时，这个事件绑定就会使用文本框的值（搜索词）调用 search() 函数。 searchTerms 变成了一个能发出搜索词的稳定的流。
+14、借助 switchMap 操作符， 每个有效的击键事件都会触发一次 HttpClient.get() 方法调用。 即使在每个请求之间都有至少 300ms 的间隔，仍然可能会同时存在多个尚未返回的 HTTP 请求。
+
+15、switchMap() 会记住原始的请求顺序，只会返回最近一次 HTTP 方法调用的结果。 以前的那些请求都会被取消和舍弃。
+
+16、注意，取消前一个 searchHeroes() 可观察对象并不会中止尚未完成的 HTTP 请求。 那些不想要的结果只会在它们抵达应用代码之前被舍弃。
+17、记住，组件类中并没有订阅 heroes$ 这个可观察对象，而是由模板中的 AsyncPipe 完成的。
+18、什么是模块引入变量，#heroForm代表什么意思
+19、[target]="expression" bind-target="expression"从数据源到试图，
+    (target)="expression" on-target="expression"从视图到数据源的单向绑定
+    [(target)] ="expression" bindon-target="expression" 双向绑定
