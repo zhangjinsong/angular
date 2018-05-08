@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/pagation.css">
+</head>
+<body>
+	<div id="pagination_3">
+		
+	</div>
+	<script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="./js/pagation.min.js"></script>
+	<script type="text/javascript">
+		$("#pagination_3").whjPaging({
+            pageSizeOpt: [
+                {'value': 5, 'text': '5条/页', 'selected': true},
+                {'value': 10, 'text': '10条/页'},
+                {'value': 15, 'text': '15条/页'},
+                {'value': 20, 'text': '20条/页'}
+            ],
+            totalPage: 18,
+            showPageNum: 5,
+            firstPage: '首页',
+            previousPage: '上一页',
+            nextPage: '下一页',
+            lastPage: '尾页',
+            skip: '跳至',
+            confirm: '确认',
+            refresh: '刷新',
+            totalPageText: '共{}页',
+            isShowFL: true,
+            isShowPageSizeOpt: true,
+            isShowSkip: true,
+            isShowRefresh: true,
+            isShowTotalPage: true,
+            isResetPage: false,
+            callBack: function (currPage, pageSize) {
+                console.log('currPage:' + currPage + '     pageSize:' + pageSize);
+            }
+        });
+	</script>
+</body>
+</html>

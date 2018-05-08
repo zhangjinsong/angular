@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>x-1</title>
+	<style type="text/css">
+		.icon-arrow{
+			display: inline-block;
+			width: 20px;
+			height: 1ex;
+			background: url("./image/arrow.png") no-repeat center;
+		}
+	</style>
+</head>
+<body>
+	<div id="divTest1">zhangjs<i class="icon-arrow"></i></div>
+	<div id="divTest2">张劲松<i class="icon-arrow"></i></div>
+	<select id="selFontFamily">
+		<option value="simsun">宋体</option>
+		<option value="microsoft yahei">微软雅黑</option>
+		<option value="Arial">Arial</option>
+		<option value="Consolas">Consolas</option>
+		<option value="simsun">宋体</option>
+	</select>
+	<select id="selFontSize">
+		<option value="14px">14px</option>
+		<option value="18px">18px</option>
+		<option value="24px">24px</option>
+		<option value="30px">30px</option>
+	</select>
+	<script type="text/javascript">
+		
+(function() {
+    var ff = document.getElementById('selFontFamily'),
+        fs = document.getElementById('selFontSize');    
+    
+    var div1 = document.getElementById('divTest1'),
+        div2 = document.getElementById('divTest2');
+        
+    if (ff && fs && div1 && div2) {
+        ff.onchange = function() {
+            div1.style.fontFamily = this.value.replace('/', ',');
+            div2.style.fontFamily = this.value.replace('/', ',');
+        };
+        fs.onchange = function() {
+            div1.style.fontSize = this.value;
+            div2.style.fontSize = this.value;
+        };
+    }
+})();
+	</script>
+</body>
+</html>

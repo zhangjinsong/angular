@@ -22,3 +22,20 @@ angular学习总结：
 19、[target]="expression" bind-target="expression"从数据源到试图，
     (target)="expression" on-target="expression"从视图到数据源的单向绑定
     [(target)] ="expression" bindon-target="expression" 双向绑定
+
+
+
+
+drag学习总结：
+1、onselectstart
+这个事件主要用于禁止选择网页中的文字，代码为：
+doucument.onselectStart = function(){
+	return false;
+}
+	另外ff/opera不支持此事件，ff可以用css控制，代码为body{-moz-user-select:none},webkit可以使用“-khtml-user-select”,当然也可以使用onselectstart事件来阻止用户选定元素内的文本.opera浏览器可以在元素上直接设置unselectable="on"来阻止选择元素内的文本
+	注意：此事件不支持对input和textarea文字的选择
+2、onselect
+	此事件在选择textarea或input内的内容后触发，因此只有input和textarea标签支持。	
+问题：
+1、<Heroes>代表什么意思
+2、为啥observe可观察对象都需要这样的申明

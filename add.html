@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>add</title>
+	<style type="text/css">
+		.add{
+			color:#ccc;
+			border:2px dashed;
+			width: 300px;
+			height: 300px;
+		}
+		.add:before{
+			border-top: 10px solid;
+		}
+		.add:after{
+			border-left: 10px solid
+		}
+		.add:hover{
+			border-color:#06c;
+		}
+		.add:hover::before,.add:hover::after{
+			color: #06c;
+		}
+	</style>
+</head>
+<body>
+	<div class="add"></div>
+</body>
+</html>
